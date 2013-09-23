@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>jQuery Plugin Booom</title>
+<style>
+body {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+h1,h2 {
+  font-size: 1em;
+  margin: 10px;
+}
+h2 { font-weight: normal;}
+pre {
+  background: #efefef;
+  margin: 10px;
+  padding: 10px;
+}
+img {
+  max-width: 100%;
+}
+</style>
+</head>
+<body>
+<h1>About Booom</h1>
+<p>This is jQueyr plugin at Add saturated linework over original image.</p>
+<h2>How to use</h2>
+<p>jQuery and plugin file load</p>
+<pre><code>
+&lt;script src="http://code.jquery.com/jquery-1.9.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="./js/booom.js"&gt;&lt;/script&gt;
+</code></pre>
+<p>Add class="saturated-linework" at img.</p>
+<pre><code>$(function(){
+  $(".booom").Booom();
+});</code></pre>
+<ul>
+<li>画像を入れたdivのクラス名なり何なりをセレクタに。</li>
+<li>オプションで画像パスを指定可能</li>
+<li>width と height を指定して、中心からどれくらいずらすかを指定</li>
+</ul>
+<h3>サンプル</h3>
+<div class="line">
+  <img src="http://stackstock.net/wp-content/img/2013/06/tsuyopon01.jpg" alt="デートをすっぽかされて半べそになりかけのつよぽん" title="デートをすっぽかされて半べそになりかけのつよぽん" width="600"/>
+</div>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="./js/booom.js"></script>
+<script>
+$(function(){
+  // 画像を入れたdivのクラス名なり何なりをセレクタに。
+  // オプションで画像パスを指定可能
+  // width と height を指定して、中心からどれくらいずらすかを指定
+  $(".line").Booom({width:-20, height:-50});
+});
+
+</script>
+</body>
+</html>
