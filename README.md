@@ -17,7 +17,7 @@ Read jQuery and plugin file.
 Add class at div wrapped img.
 ```
 <div class="saturated">
-  <img src="./img/sample.jpg" alt="test" width="600"/>
+  <img src="./img/sample.jpg" alt="pretty cat" width="600"/>
 </div>
 ```
 

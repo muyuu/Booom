@@ -38,26 +38,22 @@ img {
 <pre><code>$(function(){
   $(".booom").Booom();
 });</code></pre>
+<h2>Option</h2>
 <ul>
-<li>画像を入れたdivのクラス名なり何なりをセレクタに。</li>
-<li>オプションで画像パスを指定可能</li>
-<li>width と height を指定して、中心からどれくらいずらすかを指定</li>
+<li>overlay image position can change when set option "width", "height".</li>
+<li>Can change Other overlay image when set option "path".</li>
 </ul>
-<h3>サンプル</h3>
-<div class="line">
-  <img src="http://stackstock.net/wp-content/img/2013/06/tsuyopon01.jpg" alt="デートをすっぽかされて半べそになりかけのつよぽん" title="デートをすっぽかされて半べそになりかけのつよぽん" width="600"/>
+<h3>Smaple</h3>
+<div class="saturated">
+  <img src="sample.jpg" alt="pretty cat" title="pretty cat" width="600"/>
 </div>
 
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="./js/booom.js"></script>
 <script>
 $(function(){
-  // 画像を入れたdivのクラス名なり何なりをセレクタに。
-  // オプションで画像パスを指定可能
-  // width と height を指定して、中心からどれくらいずらすかを指定
-  $(".line").Booom({width:-20, height:-50});
+  $(".saturated").Booom();
 });
-
 </script>
 </body>
 </html>
